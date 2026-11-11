@@ -320,7 +320,3 @@ The result confirms correct pipelined execution. The 84-cycle count reflects the
 ## Conclusion
 
 A 5-stage pipelined RISC-V processor (RV64I) was successfully designed, implemented in Verilog, and verified through simulation. The pipeline includes a fully functional Hazard Detection Unit for load-use stalls and branch flushes, a Forwarding Unit for resolving RAW hazards, an ld-after-sd forwarding path, and register-file write-forwarding — all working together to maximise correct execution with minimal stalls. All datapath and hazard-handling modules were developed independently, tested with dedicated testbenches, and integrated into a complete working processor. The design correctly executes arithmetic, logical, memory, and branch instructions, as validated by the Fibonacci benchmark.
-
----
-
-> **Related Project:** [RISC-V Sequential Simulator](https://github.com/poojith06/riscv-sequential-simulator) — the non-pipelined single-cycle version of this processor.
